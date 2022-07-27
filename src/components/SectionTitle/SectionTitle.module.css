@@ -1,0 +1,25 @@
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.line{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    border-bottom: #888888 1.5px solid;
+    z-index: 0;
+}
+
+.title{
+    font-size:  18px;
+    width: 215px;
+    background-color: white;
+    text-align: center;
+    z-index: 1;
+}

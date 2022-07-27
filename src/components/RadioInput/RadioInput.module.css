@@ -1,0 +1,16 @@
+.fieldset{
+    display: flex;
+    align-items: center;
+    border: none;
+    margin-bottom: 23px;
+}
+
+.input{
+    width: 14px;
+    height: 14px;
+}
+
+.label{
+    margin: 0 20px 0 5px;
+    font-size: 12px;
+}
