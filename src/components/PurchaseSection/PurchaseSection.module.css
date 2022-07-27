@@ -1,14 +1,15 @@
-.section{
+.section {
     margin: 79px 0 50px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #888888;;
+    color: #888888;
+    ;
 }
 
-.container{
+.container {
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -18,7 +19,7 @@
     gap: 20px;
 }
 
-.line{
+.line {
     height: 50%;
     width: 100%;
     position: absolute;
@@ -27,15 +28,15 @@
     z-index: 0;
 }
 
-.title{
-    font-size:  16px;
+.title {
+    font-size: 16px;
     width: 215px;
     background-color: white;
     text-align: center;
     z-index: 1;
 }
 
-.btn{
+.btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,4 +47,15 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 4px;
+}
+
+@media (max-width:426px) {
+    .section {
+        margin: 0;
+    }
+
+    .container {
+        background-color: palegreen;
+        width: 100%;
+    }
 }

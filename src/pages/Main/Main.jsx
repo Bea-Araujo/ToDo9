@@ -6,10 +6,10 @@ import S from './Main.module.css'
 
 export const Main = () => {
   return (
-    <main>	
-		<AlgorythmSection />
-    <PurchaseSection />
-    <ShareSection />
+    <main>
+      <AlgorythmSection />
+      <PurchaseSection />
+      <ShareSection />
     </main>
   )
 }

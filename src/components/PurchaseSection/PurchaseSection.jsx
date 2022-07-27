@@ -11,11 +11,11 @@ export const PurchaseSection = () => {
 	const [page, setPage] = useState(1)
 
 
-	async function getResponse(page){
+	async function getResponse(page) {
 		const req = await fetch(page)
 		const json = await req.json()
-		const {nextPage, products} = json
-		
+		const { nextPage, products } = json
+
 		setProduct([...product, ...products])
 		setCurrentPage(`https://${nextPage}`)
 		console.log(json)
@@ -28,23 +28,23 @@ export const PurchaseSection = () => {
 
 	return (
 		<section className={S.section}>
-			<SectionTitle title="Sua seleção especial"/>
-			
+			<SectionTitle title="Sua seleção especial" />
+
 
 			<div className={S.container}>
 				{
 					product.map((el, i) => {
-						
-						return (<ProductBox data={el} key={i}/>)
+
+						return (<ProductBox data={el} key={i} />)
 					})
 				}
 
 			</div>
-				<button className={S.btn} onClick={
-					() => {
-						getResponse(currentPage)	
-					}
-				}>Ainda mais produtos aqui!</button>
+			<button className={S.btn} onClick={
+				() => {
+					getResponse(currentPage)
+				}
+			}>Ainda mais produtos aqui!</button>
 		</section>
 	)
 }
