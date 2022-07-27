@@ -1,14 +1,15 @@
-.section{
+.section {
     margin: 79px 0 50px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #888888;;
+    color: #888888;
+    ;
 }
 
-.form{
+.form {
     margin-top: 39px;
     width: 70%;
     display: flex;
@@ -16,14 +17,14 @@
     align-items: center;
 }
 
-.inputArea{
+.inputArea {
     display: flex;
     justify-content: center;
     gap: 40px;
     width: 100%;
 }
 
-.btn{
+.btn {
     margin-top: 30px;
     width: 260px;
     height: 39px;
@@ -33,4 +34,20 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border: 1px solid #707070;
     border-radius: 4px;
+}
+
+@media (max-width:426px) {
+    .p {
+        text-align: center;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .inputArea {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
 }

@@ -1,15 +1,14 @@
-.fieldset{
+.fieldset {
     display: flex;
     flex-direction: column;
     border: none;
-    width: 340px;
 }
 
-.label{
+.label {
     font-size: 12px;
     margin-bottom: 7px;
 }
 
-.input{
+.input {
     margin-bottom: 20px;
 }
