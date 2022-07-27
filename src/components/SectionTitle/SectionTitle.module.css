@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -7,7 +7,7 @@
     margin-bottom: 50px;
 }
 
-.line{
+.line {
     height: 50%;
     width: 100%;
     position: absolute;
@@ -16,10 +16,16 @@
     z-index: 0;
 }
 
-.title{
-    font-size:  18px;
+.title {
+    font-size: 18px;
     width: 215px;
     background-color: white;
     text-align: center;
     z-index: 1;
+}
+
+@media (max-width:426px) {
+    .container {
+        width: 100%;
+    }
 }
